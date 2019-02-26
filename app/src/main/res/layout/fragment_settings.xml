@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/x18"
+        android:layout_marginBottom="@dimen/x18"
+        android:gravity="center_vertical"
+        android:layout_gravity="center_vertical"
+        android:orientation="horizontal">
+
+
+        <com.app.merchanttreatzasia.ui.views.AnyTextView
+            android:id="@+id/txtNotification"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.8"
+            android:text="@string/notification"
+            android:layout_marginLeft="@dimen/x15"
+            android:layout_gravity="center_vertical"
+            android:textColor="@color/white"
+            android:textSize="@dimen/x15"
+            app:typeface="@string/font_normal" />
+
+
+        <ToggleButton
+            android:id="@+id/toggleNotification"
+            android:layout_width="@dimen/x40"
+            android:layout_height="@dimen/x30"
+            android:layout_gravity="center_vertical"
+            android:layout_marginTop="@dimen/x2"
+            android:layout_marginRight="@dimen/x12"
+            android:background="@drawable/selector_toggle"
+            android:checked="false"
+            android:gravity="right|center_vertical"
+            android:text=""
+            android:textOff=""
+            android:textOn="" />
+
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="@color/border_color" />
+
+    <LinearLayout
+        android:id="@+id/llLanguage"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <com.app.merchanttreatzasia.ui.views.AnyTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/x20"
+            android:layout_marginBottom="@dimen/x20"
+            android:layout_marginLeft="@dimen/x15"
+            android:text="@string/language"
+            android:textColor="@color/white"
+            android:textSize="@dimen/x15"
+            app:typeface="@string/font_normal" />
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="@color/border_color" />
+
+    <LinearLayout
+        android:id="@+id/llAboutApp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <com.app.merchanttreatzasia.ui.views.AnyTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/x20"
+            android:layout_marginBottom="@dimen/x20"
+            android:layout_marginLeft="@dimen/x15"
+            android:text="@string/about_app"
+            android:textColor="@color/white"
+            android:textSize="@dimen/x15"
+            app:typeface="@string/font_normal" />
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="@color/border_color" />
+
+    <LinearLayout
+        android:id="@+id/llOurBranches"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:visibility="gone">
+
+        <com.app.merchanttreatzasia.ui.views.AnyTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/x20"
+            android:layout_marginBottom="@dimen/x20"
+            android:layout_marginLeft="@dimen/x15"
+            android:text="@string/our_branches"
+            android:textColor="@color/white"
+            android:textSize="@dimen/x15"
+            app:typeface="@string/font_normal" />
+
+    </LinearLayout>
+
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="@color/border_color" />
+
+
+</LinearLayout>

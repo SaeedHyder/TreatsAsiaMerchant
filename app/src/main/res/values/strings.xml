@@ -1,0 +1,203 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="API_KEY">AIzaSyCe2ZuL3XQ-uGv_yXCrrNXfrDpY95Rqoug</string>
+
+    <!-- mark favourite message -->
+    <string name="successful">Successfully marked as favourites</string>
+
+    <string name="drawer_open">open</string>
+    <string name="drawer_close">close</string>
+
+    <string name="api_key">AIzaSyDVoMO_xVCHLbv2ozuDMfEK5jq9IyZ_iwI</string>
+    <string name="app_name">Treatz Asia Merchant</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    <string name="facebook_app_id">674632155971845</string>
+    <string name="facebook_app_id_test">175703936145004</string>
+
+    <!-- Error Messages -->
+    <string name="error_passwords_do_not_match">Passwords do not match.</string>
+    <string name="error_could_not_connect">Could not connect to server. Please try again later.</string>
+    <string name="error_cannot_create_account">Account already exists!</string>
+    <string name="error_cannot_sign_in">Please provide correct Email and Password</string>
+    <string name="crash_toast_text">Sorry for inconvenience, we will get this issue fixed!</string>
+    <string name="msg_connection_failed">Error! Connection to server failed.</string>
+    <string name="msg_connection_error">Please check your internet connection</string>
+
+    <!-- Date Time -->
+    <string name="common.months">months</string>
+    <string name="common.weeks">weeks</string>
+    <string name="common.days">days</string>
+    <string name="common.hrs">hrs</string>
+    <string name="common.mins">mins</string>
+    <string name="common.secs">secs</string>
+    <string name="common.ago">ago</string>
+
+    <!-- AnyTextView -->
+    <string name="typeface_not_found">Typeface %$1 not found, or could not be loaded.
+        Showing default typeface.</string>
+    <string name="app">AnyTextView</string>
+    <string name="assets_fonts_folder">fonts/</string>
+    <string name="txt_enter_phone_no">Enter Phone No.</string>
+    <string name="txt_register_text">Verificaion process is required to verify the phone no.</string>
+    <string name="message_quit">Are you sure you want to exit?</string>
+    <string name="message_wait">Please wait while data is loading.</string>
+    <string name="email_address">Email Address</string>
+    <string name="password">Password</string>
+    <string name="confirm_pass">Confirm Password</string>
+    <string name="forgot_password">Forgot Password?</string>
+    <string name="click_here">  Click Here</string>
+    <string name="imgdesc_signup">Sign Up</string>
+    <string name="imgdesc_signin">Sign In</string>
+    <string name="back_to_login"><u>Back to Login</u></string>
+    <string name="remember_me">remember me</string>
+    <string name="login">Login</string>
+    <string name="user_name">User Name</string>
+    <string name="first_name">First Name</string>
+    <string name="last_name">Last Name</string>
+    <string name="home">Home</string>
+    <string name="profile">Profile</string>
+    <string name="categories">Categories</string>
+    <string name="messages">Messages</string>
+    <string name="settings">Settings</string>
+    <string name="search_hint">Search Ads, User or Category</string>
+    <string name="password_sent">Your password will be sent to your \nemail address</string>
+    <string name="change_password">CHANGE PASSWORD</string>
+    <string name="reason_for_rejection">REASON</string>
+    <string name="old_password">Old Password</string>
+    <string name="new_password">New Password</string>
+    <string name="via_email">Via Email</string>
+    <string name="via_sms">Via SMS</string>
+    <string name="tell_a_friend">TELL A FRIEND</string>
+    <string name="contact_email">contact@voltas.com</string>
+    <string name="contact_phone">5555 555 555</string>
+    <string name="enter_text">Enter Text</string>
+    <string name="you_paid">YOU PAID</string>
+    <string name="tap_to_rate">TAP A STAR TO RATE DRIVER</string>
+    <string name="contact_address">Columbus College of Arts, New York</string>
+    <string name="lorem_ipsum">Lorem Ipsum is simply dummy text of the printing and types
+        etting industry. Lorem Ipsum has been the industrys standard dummy text ever sinc
+        e the 1500s, when an unknown printer took a galley of type and scrambled it t
+        o make a type specimen book. It has survived not only five centuries, but
+         also the leap into electronic typesetting, remaining essentially unchanged
+         . It was popularised in the 1960s with the release of Letraset sheets cont
+         aining Lorem Ipsum passages, and more recently with desktop publishing so
+         ftware like Aldus PageMaker including versions of Lorem Ipsum.</string>
+    <string name="this_is_login_fragment">This is Login Fragment</string>
+
+    <string name="default_hint_text">Where are you going?</string>
+
+    <string name="connection_lost">No Internet Found</string>
+    <string name="email">Email</string>
+    <string name="forgot_password_">Forgot Password?</string>
+    <string name="email_error">Enter valid Email</string>
+    <string name="password_error">Enter valid Password</string>
+    <string name="my_profile">My Profile</string>
+    <string name="update">Update</string>
+    <string name="store_error">Store Name can not be empty</string>
+    <string name="store_address_error">Store Address can not be empty.</string>
+
+
+    <!--FONTS-->
+    <string name="font_normal">Poppins-Regular_1.ttf</string>
+    <string name="font_bold">Poppins-Bold_1.ttf</string>
+    <string name="font_italic_bold">Roboto-Italic_2.ttf</string>
+    <string name="font_italic_light">Roboto-LightItalic_2.ttf</string>
+    <string name="font_handwriting">segoeprb_1.ttf</string>
+
+
+    <string name="apply">Apply</string>
+    <string name="welcome">Welcome Back</string>
+    <string name="burger_king">Burger King</string>
+    <string name="scan_code">Scan Code</string>
+    <string name="my_history">My History</string>
+    <string name="log_out">Logout</string>
+    <string name="filter">Filter</string>
+    <string name="latest_to_old">Latest to old</string>
+    <string name="old_to_latest">Old to latest</string>
+    <string name="flash_sale">Flash sale</string>
+    <string name="a_to_z">A-Z</string>
+    <string name="z_to_a">Z-A</string>
+
+    <string name="merchant_varification">Merchant Verification</string>
+    <string name="rescan">Rescan</string>
+    <string name="next">Next</string>
+    <string name="enter_merchant">Enter Merchant ID</string>
+    <string name="expires_on">Expires On: </string>
+    <string name="redeem_coupon">Redeem Coupon</string>
+    <string name="enter_remaining">Enter remaining applicable amount</string>
+    <string name="redeem">Redeem</string>
+    <string name="coupon_redeemed">Coupon Redeeemed</string>
+    <string name="invalid_code">Invalid Code</string>
+    <string name="coupon_has_been">Coupon has been \n succesfully redeemed</string>
+    <string name="invalid_barcode">QR Code Failed!\nTry again</string>
+    <string name="ok">OK</string>
+    <string name="redemption_date">Redemption Date: </string>
+    <string name="user_id">User ID</string>
+    <string name="remaining">Remaining</string>
+    <string name="notification">Notifications</string>
+    <string name="language">Language</string>
+    <string name="about_app">About App</string>
+    <string name="our_branches">Our Branches</string>
+    <string name="userid">User ID</string>
+    <string name="redemption_detail">Redemption Details</string>
+    <string name="will_be_implemented">Will be implemented in beta version</string>
+    <string name="english">English</string>
+    <string name="indonesian">Indonesian</string>
+    <string name="malai">Malay</string>
+    <string name="enter_your_email_address_to">Enter Your Email Address to</string>
+    <string name="reset_password">Reset Password</string>
+    <string name="submit">Submit</string>
+    <string name="reset_password_message">We have sent you password in your email, please check your inbox as well as spam/junk folder.</string>
+    <string name="reset_password_title">Reset Password</string>
+    <string name="reset_password_header">Reset Password</string>
+    <string name="yes">Yes</string>
+    <string name="no">No</string>
+    <string name="logout">Logout</string>
+    <string name="are_you_sure_you_want_to_logout">Are you sure you want to logout</string>
+    <string name="scanned_complete">Scaned Complete</string>
+    <string name="profile_updated">Profile Updated.</string>
+    <string name="Search_Location">Search Location</string>
+    <string name="went_wrong">Try Again Later</string>
+    <string name="Unable_location">Unable to get location</string>
+    <string name="Use_This_Location">Use This Location</string>
+    <string name="Loading_Location">Loading Location ...</string>
+    <string name="no_location_found">No Location Found</string>
+
+    <string name="cashback">Cashback</string>
+    <string name="flatfree">Flat Free</string>
+    <string name="discount">Discount</string>
+    <string name="notification_settings_message">Notification settings changed successfully</string>
+    <string name="language_change_successfully">Language changed successfully</string>
+    <string name="flat">Flat </string>
+    <string name="ofon">% off on</string>
+    <string name="offon">off on</string>
+    <string name="voucher">Voucher</string>
+    <string name="no_data">No Data to Show</string>
+    <string name="find_a_lawyer">FIND A LAWYER</string>
+    <string name="enter_your_location">Enter Your Location</string>
+    <string name="skip">Skip</string>
+
+    <string name="create_new_branch">Create New Branch ID</string>
+    <string name="enter_password">Enter Password</string>
+    <string name="confirm_password">Confirm Password</string>
+    <string name="branch_name">Branch Name</string>
+    <string name="create_new_branch_account">Create New Branch Account</string>
+    <string name="enter_branch_name">Enter Branch Name</string>
+    <string name="confirm_pas_not_match">Confirm Password Not Match</string>
+    <string name="points_redeemed">Points Redeemed</string>
+    <string name="totals_points_redeemed">Totals Points Redeemed</string>
+    <string name="history">History</string>
+    <string name="create_branch_account">Create Branch Account</string>
+    <string name="branch_deleted">Branch deleted successfully</string>
+    <string name="are_you_sure_you_want_to_delete">Are you sure you want to delete?</string>
+    <string name="confirm">Confirm</string>
+    <string name="new_branch_created">New branch created successfully</string>
+    <string name="branch_updated">Branch updated successfully</string>
+    <string name="update_branch_account">Update Branch Account</string>
+    <string name="type_cash_voucher">Cash Voucher</string>
+    <string name="type_discount_coupon">Discount Coupon</string>
+    <string name="type_promo_code">Promo Code</string>
+
+</resources>

@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="@dimen/x15">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_weight="0.6"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <com.app.merchanttreatzasia.ui.views.AnyTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/points_redeemed"
+                android:textColor="@color/white"
+                android:textSize="@dimen/x15"
+                app:typeface="@string/font_normal" />
+
+            <com.app.merchanttreatzasia.ui.views.AnyTextView
+                android:id="@+id/txtPoints"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                tools:text="(50)"
+                android:layout_marginLeft="@dimen/x10"
+                android:textColor="@color/color_orange"
+                android:textSize="@dimen/x15"
+                app:typeface="@string/font_normal" />
+
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_weight="0.4"
+            android:layout_height="wrap_content"
+            android:gravity="right|center_vertical"
+            android:orientation="vertical">
+
+            <com.app.merchanttreatzasia.ui.views.AnyTextView
+                android:id="@+id/tv_date"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/white"
+                android:textSize="@dimen/x10"
+                tools:text="4 junly 2017"
+                app:typeface="@string/font_normal"
+                android:layout_marginRight="@dimen/x5"/>
+
+
+            <com.app.merchanttreatzasia.ui.views.AnyTextView
+                android:id="@+id/tv_time"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/white"
+                tools:text="03:00"
+                android:textSize="@dimen/x10"
+                app:typeface="@string/font_normal"
+                android:layout_marginLeft="@dimen/x5"/>
+
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <com.app.merchanttreatzasia.ui.views.AnyTextView
+        android:id="@+id/txtVoucherDetail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        tools:text="Johon redeemed 50% on ZInger Voucher for 100 Points"
+        android:textColor="@color/white"
+        android:textSize="@dimen/x12"
+        android:maxLines="3"
+        app:typeface="@string/font_normal" />
+
+
+</LinearLayout>

@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg">
+
+    <RadioGroup
+        android:id="@+id/radioGroupSort"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.4"
+        android:orientation="vertical">
+
+        <RadioButton
+            android:id="@+id/rb_a_to_z"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/a_to_z"
+            android:layout_margin="@dimen/x15"
+            android:padding="@dimen/x10"
+            android:button="@drawable/selector_chkbox"
+            android:textColor="@color/white"
+            android:checked="true" />
+
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:alpha="0.5"
+            android:background="@color/border_color" />
+
+        <RadioButton
+            android:id="@+id/rb_z_to_a"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/z_to_a"
+            android:layout_margin="@dimen/x15"
+            android:padding="@dimen/x10"
+            android:button="@drawable/selector_chkbox"
+            android:textColor="@color/white"
+            android:checked="false"/>
+
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:alpha="0.5"
+            android:background="@color/border_color"  />
+
+    </RadioGroup>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.6">
+
+        <Button
+            android:id="@+id/btnApply"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/button_background"
+            android:text="@string/apply"
+            android:textColor="@color/white"
+            android:layout_margin="@dimen/x15"
+            android:padding="@dimen/x10"
+            android:button="@drawable/selector_chkbox"
+            android:textAllCaps="false"/>
+
+    </LinearLayout>
+
+
+</LinearLayout>

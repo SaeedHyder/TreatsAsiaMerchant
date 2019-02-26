@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center"
+    android:gravity="center"
+    android:background="@drawable/roundshapelayout"
+    android:orientation="vertical"
+
+    >
+
+    <com.app.merchanttreatzasia.ui.views.AnyTextView
+        android:id="@+id/txt_thankYou"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:gravity="center_horizontal"
+        android:text="@string/invalid_code"
+        android:textColor="@color/dark_grey"
+        android:textSize="@dimen/x20"
+        android:layout_marginTop="@dimen/x20"
+        android:layout_marginBottom="@dimen/x20"
+        app:typeface="@string/font_normal" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:alpha="0.5"
+        android:background="@color/light_gray_color" />
+
+    <LinearLayout
+        android:id="@+id/textLayout"
+        android:layout_width="@dimen/x300"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:orientation="vertical"
+        android:paddingLeft="@dimen/x15"
+        android:paddingRight="@dimen/x15"
+        >
+
+        <com.app.merchanttreatzasia.ui.views.AnyTextView
+            android:id="@+id/txtMsg"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_gravity="center"
+            android:layout_marginBottom="@dimen/x15"
+            android:layout_marginTop="@dimen/x25"
+            android:alpha="0.6"
+            android:gravity="center_horizontal"
+            android:text="@string/invalid_barcode"
+            android:textColor="@color/dark_grey"
+            android:textSize="@dimen/x17"
+            app:typeface="@string/font_normal" />
+
+        <com.app.merchanttreatzasia.ui.views.AnyTextView
+            android:id="@+id/txt_number_forgot"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_gravity="center"
+            android:layout_marginBottom="@dimen/x10"
+            android:gravity="center_horizontal"
+            android:text="+971 1234567"
+            android:visibility="gone"
+            android:textColor="@color/black"
+            android:textSize="15sp"
+            app:typeface="@string/font_normal" />
+
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:alpha="0.5"
+        android:background="@color/light_gray_color" />
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/textLayout"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="@dimen/x15"
+        android:orientation="vertical">
+
+        <com.app.merchanttreatzasia.ui.views.AnyTextView
+            android:id="@+id/btnOk"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal|center_vertical"
+            android:text="@string/ok"
+            android:textColor="@color/gold_color"
+            android:textSize="20sp"
+            android:paddingBottom="@dimen/x20"
+            app:typeface="@string/font_normal" />
+
+
+    </LinearLayout>
+</LinearLayout>

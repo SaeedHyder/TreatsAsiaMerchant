@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/black">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_margin="@dimen/x10">
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_weight="0.7">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <com.app.merchanttreatzasia.ui.views.AnyTextView
+                    android:id="@+id/tv_credit_type"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="@dimen/x3"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/x15"
+                    app:typeface="Roboto-Regular.ttf"
+                    android:text="Points Redeemed"/>
+
+                <com.app.merchanttreatzasia.ui.views.AnyTextView
+                    android:id="@+id/tv_credit_amount"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/x3"
+                    android:textColor="@color/gold_color"
+                    android:textSize="@dimen/x15"
+                    app:typeface="Roboto-Regular.ttf"
+                    android:text="hey"/>
+
+            </LinearLayout>
+
+            <com.app.merchanttreatzasia.ui.views.AnyTextView
+                android:id="@+id/tv_msg"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/x3"
+                android:textColor="@color/white"
+                android:textSize="@dimen/x12"
+                app:typeface="Roboto-Regular.ttf"
+                android:gravity="center_vertical"
+                android:text="hey"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_weight="0.3"
+            android:layout_marginTop="@dimen/x7">
+
+            <com.app.merchanttreatzasia.ui.views.AnyTextView
+                android:id="@+id/tv_date"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="@dimen/x3"
+                android:textColor="@color/white"
+                android:textSize="@dimen/x10"
+                app:typeface="Roboto-Regular.ttf"
+                android:gravity="right"
+                android:layout_gravity="right"
+                android:text="hey"/>
+
+            <com.app.merchanttreatzasia.ui.views.AnyTextView
+                android:id="@+id/tv_time"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="@dimen/x3"
+                android:textColor="@color/white"
+                android:textSize="@dimen/x10"
+                app:typeface="Roboto-Regular.ttf"
+                android:gravity="right"
+                android:layout_gravity="right"
+                android:text="hey"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+</LinearLayout>

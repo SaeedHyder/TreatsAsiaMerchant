@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/llroot"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="horizontal"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:gravity="center"
+    android:padding="@dimen/x6"
+    android:background="@drawable/type_drawable">
+
+    <ImageView
+        android:id="@+id/iconType"
+        android:layout_width="@dimen/x13"
+        android:layout_height="@dimen/x13"
+        tools:src="@drawable/crossicon"/>
+
+    <com.app.merchanttreatzasia.ui.views.AnyTextView
+        android:id="@+id/txtType"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:layout_gravity="center_vertical"
+        android:layout_marginLeft="@dimen/x10"
+        android:textColor="@color/white"
+        tools:text="Practice Area"
+        android:textSize="@dimen/x13"
+        app:typeface="@string/font_normal"
+        />
+
+</LinearLayout>

@@ -1,0 +1,362 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/x190">
+
+            <ImageView
+                android:id="@+id/ivDeal"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/x190"
+                android:scaleType="fitXY"
+                tools:src="@drawable/banner" />
+
+            <com.app.merchanttreatzasia.ui.views.AnyTextView
+                android:id="@+id/txtPaidType"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentStart="true"
+                android:layout_marginBottom="14dp"
+                android:background="@drawable/shape"
+                android:gravity="center"
+                android:paddingBottom="@dimen/x6"
+                android:paddingEnd="@dimen/x15"
+                android:paddingStart="@dimen/x10"
+                android:paddingTop="@dimen/x6"
+                android:textColor="@color/white"
+                android:textSize="@dimen/x13"
+                app:typeface="@string/font_normal"
+                tools:text="@string/cashback" />
+
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/x8"
+            android:layout_marginTop="@dimen/x12"
+            android:layout_marginRight="@dimen/x10"
+            android:orientation="horizontal">
+
+            <com.app.merchanttreatzasia.ui.views.AnyTextView
+                android:id="@+id/txtFlatePercents"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/text_bold_color"
+                android:textSize="@dimen/x17"
+                app:typeface="@string/font_normal"
+                tools:text="Flat 25% off on" />
+
+            <com.app.merchanttreatzasia.ui.views.AnyTextView
+                android:id="@+id/txtCompanyName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/x3"
+                android:textColor="@color/text_bold_color"
+                android:textSize="@dimen/x17"
+                android:visibility="gone"
+                app:typeface="@string/font_normal"
+                tools:text="Burger King" />
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/x8"
+            android:layout_marginRight="@dimen/x8"
+            android:layout_marginTop="@dimen/x10"
+            android:orientation="horizontal">
+
+            <com.app.merchanttreatzasia.ui.views.AnyTextView
+                android:id="@+id/txtTotalRate"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/gray_dark"
+                android:textSize="@dimen/x12"
+                app:typeface="@string/font_normal"
+                tools:text="$602" />
+
+            <com.app.merchanttreatzasia.ui.views.AnyTextView
+                android:id="@+id/txtRemainingRate"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/x10"
+                android:textColor="@color/text_bold_color"
+                android:textSize="@dimen/x15"
+                app:typeface="@string/font_normal"
+                tools:text="$482" />
+
+            <!--        <com.app.merchanttreatzasia.ui.views.AnyTextView
+                        android:id="@+id/txtPoints"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/x10"
+                        android:textColor="@color/gold_color"
+                        android:textSize="@dimen/x15"
+                        app:typeface="@string/font_normal"
+                        android:gravity="right"
+                        android:layout_gravity="right"
+                        android:layout_marginRight="@dimen/x10"/>-->
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="right"
+                android:layout_marginRight="@dimen/x10"
+                android:gravity="right"
+                android:orientation="horizontal"
+                android:visibility="gone">
+
+                <com.app.merchanttreatzasia.ui.views.AnyTextView
+                    android:id="@+id/txtPoints"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="@dimen/x5"
+                    android:textColor="@color/gold_color"
+                    android:textSize="@dimen/x15"
+                    app:typeface="@string/font_normal" />
+
+                <com.app.merchanttreatzasia.ui.views.AnyTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Points"
+                    android:textColor="@color/text_bold_color"
+                    android:textSize="@dimen/x15"
+                    app:typeface="@string/font_normal" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:layout_marginTop="@dimen/x10"
+            android:background="#C6C6C6" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/x8"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:layout_marginRight="@dimen/x10"
+            android:paddingBottom="@dimen/x15"
+            android:paddingTop="@dimen/x15">
+
+
+            <ImageView
+                android:layout_width="@dimen/x15"
+                android:layout_height="@dimen/x15"
+                android:scaleType="fitXY"
+                android:src="@drawable/time" />
+
+
+            <com.app.merchanttreatzasia.ui.views.AnyTextView
+                android:id="@+id/txtRedemptionDate"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/x7"
+                android:text="@string/redemption_date"
+                android:textColor="@color/gray_dark"
+                android:textSize="@dimen/x13"
+                app:typeface="@string/font_normal" />
+
+            <com.app.merchanttreatzasia.ui.views.AnyTextView
+                android:id="@+id/txtRedemptionDateValue"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/x7"
+                android:textColor="@color/light_gray_color"
+                android:textSize="@dimen/x13"
+                app:typeface="@string/font_normal"
+                tools:text="June 25 2017" />
+
+
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:background="#C6C6C6" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/x8"
+            android:layout_marginTop="@dimen/x12"
+            android:layout_marginRight="@dimen/x10"
+            android:orientation="horizontal">
+
+
+            <com.app.merchanttreatzasia.ui.views.AnyTextView
+                android:id="@+id/txtUserId"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.3"
+                android:text="@string/userid"
+                android:textColor="@color/gray_dark"
+                android:textSize="@dimen/x17"
+                app:typeface="@string/font_normal" />
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="0.7"
+                android:orientation="horizontal">
+
+                <com.app.merchanttreatzasia.ui.views.AnyTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/x20"
+                    android:text=":"
+                    android:textColor="@color/text_bold_color"
+                    android:textSize="@dimen/x17"
+                    app:typeface="@string/font_bold" />
+
+                <com.app.merchanttreatzasia.ui.views.AnyTextView
+                    android:id="@+id/txtUserIdValue"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/x30"
+                    android:textColor="@color/text_bold_color"
+                    android:textSize="@dimen/x17"
+                    app:typeface="@string/font_normal"
+                    tools:text="1317433" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:layout_marginTop="@dimen/x10"
+            android:background="#C6C6C6" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="@dimen/x8"
+            android:layout_marginRight="@dimen/x10"
+            android:layout_marginTop="@dimen/x12"
+            android:orientation="horizontal">
+
+
+            <com.app.merchanttreatzasia.ui.views.AnyTextView
+                android:id="@+id/txtUserName"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.3"
+                android:text="User Name"
+                android:textColor="@color/gray_dark"
+                android:textSize="@dimen/x17"
+                app:typeface="@string/font_normal" />
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="0.7"
+                android:orientation="horizontal">
+
+                <com.app.merchanttreatzasia.ui.views.AnyTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/x20"
+                    android:text=":"
+                    android:textColor="@color/text_bold_color"
+                    android:textSize="@dimen/x17"
+                    app:typeface="@string/font_bold" />
+
+                <com.app.merchanttreatzasia.ui.views.AnyTextView
+                    android:id="@+id/txtUserNameValue"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/x30"
+                    android:textColor="@color/text_bold_color"
+                    android:textSize="@dimen/x17"
+                    app:typeface="@string/font_normal"
+                    tools:text="sadsadsdasdadsadsadsadsadsadsadsa" />
+
+            </LinearLayout>
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:layout_marginTop="@dimen/x10"
+            android:background="#C6C6C6" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/x8"
+            android:layout_marginTop="@dimen/x12"
+            android:layout_marginRight="@dimen/x10"
+            android:orientation="horizontal">
+
+
+            <com.app.merchanttreatzasia.ui.views.AnyTextView
+                android:id="@+id/txtRemaining"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.3"
+                android:text="@string/remaining"
+                android:textColor="@color/gray_dark"
+                android:textSize="@dimen/x17"
+                app:typeface="@string/font_normal" />
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="0.7"
+                android:orientation="horizontal">
+
+                <com.app.merchanttreatzasia.ui.views.AnyTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/x20"
+                    android:text=":"
+                    android:textColor="@color/text_bold_color"
+                    android:textSize="@dimen/x17"
+                    app:typeface="@string/font_bold" />
+
+                <com.app.merchanttreatzasia.ui.views.AnyTextView
+                    android:id="@+id/txtRemainingValue"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/x30"
+                    android:textColor="@color/gold_color"
+                    android:textSize="@dimen/x17"
+                    app:typeface="@string/font_normal"
+                    tools:text="$20" />
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:layout_marginTop="@dimen/x10"
+            android:background="#C6C6C6" />
+
+    </LinearLayout>
+</ScrollView>

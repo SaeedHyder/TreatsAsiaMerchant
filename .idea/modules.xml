@@ -2,10 +2,9 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/Treatz_Asia_Merchant.iml" filepath="$PROJECT_DIR$/Treatz_Asia_Merchant.iml" />
+      <module fileurl="file://$PROJECT_DIR$/TreatzAsiaMerchant.iml" filepath="$PROJECT_DIR$/TreatzAsiaMerchant.iml" />
       <module fileurl="file://$PROJECT_DIR$/android-slidr/android-slidr.iml" filepath="$PROJECT_DIR$/android-slidr/android-slidr.iml" />
       <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
-      <module fileurl="file://$PROJECT_DIR$/autocompletes/autocompletes.iml" filepath="$PROJECT_DIR$/autocompletes/autocompletes.iml" />
       <module fileurl="file://$PROJECT_DIR$/commons-lang3-3.1/commons-lang3-3.1.iml" filepath="$PROJECT_DIR$/commons-lang3-3.1/commons-lang3-3.1.iml" />
       <module fileurl="file://$PROJECT_DIR$/mobilevisionbarcodescanner/mobilevisionbarcodescanner.iml" filepath="$PROJECT_DIR$/mobilevisionbarcodescanner/mobilevisionbarcodescanner.iml" />
       <module fileurl="file://$PROJECT_DIR$/nineoldandroids-library-2.4.0/nineoldandroids-library-2.4.0.iml" filepath="$PROJECT_DIR$/nineoldandroids-library-2.4.0/nineoldandroids-library-2.4.0.iml" />

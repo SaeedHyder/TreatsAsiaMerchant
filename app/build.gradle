@@ -30,14 +30,13 @@ android {
 }
 dependencies {
     implementation 'com.android.support:appcompat-v7:27.1.1'
+    implementation 'com.android.support:mediarouter-v7:27.1.1'
     implementation 'com.android.support:customtabs:27.1.1'
     implementation 'com.android.support:cardview-v7:27.1.1'
     implementation 'com.google.guava:guava:20.0'
     implementation 'com.android.support:support-v4:27.1.1'
     implementation 'com.android.support:recyclerview-v7:27.1.1'
-
-    implementation 'com.google.android.gms:play-services-base:11.8.0'
-    implementation 'com.google.android.gms:play-services-maps:11.8.0'
+    implementation 'com.google.android.gms:play-services:11.8.0'
     implementation 'com.google.firebase:firebase-messaging:11.8.0'
     implementation 'com.google.firebase:firebase-crash:11.8.0'
     implementation 'com.nostra13.universalimageloader:universal-image-loader:1.9.5'
@@ -52,8 +51,8 @@ dependencies {
     implementation 'com.android.support:multidex:1.0.3'
     annotationProcessor 'com.jakewharton:butterknife-compiler:8.8.1'
     implementation 'com.xiaofeng.android:flowlayoutmanager:1.2.3.2'
+    implementation 'com.jota.autocompletelocation:autocomplete-location:0.9.0'
     implementation 'com.karumi:dexter:5.0.0'
-    implementation project(path: ':autocompletes')
     implementation project(path: ':android-slidr')
     implementation fileTree(include: ['*.jar'], dir: 'libs')
     //RecyclerView
@@ -61,8 +60,6 @@ dependencies {
         exclude module: 'design'
     }
     implementation project(':commons-lang3-3.1')
-
-
     implementation project(':nineoldandroids-library-2.4.0')
     implementation project(path:
             ':mobilevisionbarcodescanner')

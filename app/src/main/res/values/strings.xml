@@ -199,5 +199,7 @@
     <string name="type_cash_voucher">Cash Voucher</string>
     <string name="type_discount_coupon">Discount Coupon</string>
     <string name="type_promo_code">Promo Code</string>
-
+    <string name="logout_successfully">Logout successfully</string>
+    <string name="no_notification_found">No notification found \n \n Notifications will be show up here, so you can easily view them here later</string>
+    <string name="no_istory_found">No history found</string>
 </resources>

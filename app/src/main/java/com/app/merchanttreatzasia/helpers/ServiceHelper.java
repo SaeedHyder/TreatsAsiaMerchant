@@ -44,12 +44,11 @@ public class ServiceHelper<T> {
                         if (tag.equals(WebServiceConstants.evaucherdetailBarcode)) {
 
                             final DialogHelper dialogHelper = new DialogHelper(context);
-                            dialogHelper.initRedeemedCouponDialog(R.layout.invalid_barcode_dailog, new View.OnClickListener() {
+                            dialogHelper.initRedeemedCouponDialog(R.layout.invalid_barcode_dailog,response.body().getMessage(), new View.OnClickListener() {
                                 @Override
                                 public void onClick(View v) {
                                     dialogHelper.hideDialog();
-                                    context.popBackStackTillEntry(0);
-                                    context.addDockableFragment(ScanIDFragment.newInstance(), "ScanIDFragment");
+                                    context.popFragment();
                                 }
                             });
                             dialogHelper.showDialog();

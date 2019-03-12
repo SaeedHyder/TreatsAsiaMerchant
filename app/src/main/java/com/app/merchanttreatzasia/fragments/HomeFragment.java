@@ -1,6 +1,8 @@
 package com.app.merchanttreatzasia.fragments;
 
 
+import android.app.NotificationManager;
+import android.content.Context;
 import android.os.Bundle;
 import android.support.annotation.Nullable;
 import android.util.Log;
@@ -178,8 +180,15 @@ public class HomeFragment extends BaseFragment {
     public void ResponseSuccess(Object result, String Tag) {
         switch (Tag) {
             case WebServiceConstants.logout:
+                prefHelper.setLoginStatus(false);
+
+                NotificationManager notificationManager = (NotificationManager) getDockActivity().getSystemService(Context.NOTIFICATION_SERVICE);
+                notificationManager.cancelAll();
+
                 getDockActivity().popBackStackTillEntry(0);
-                getDockActivity().addDockableFragment(LoginFragment.newInstance(), "LoginFragment");
+                getDockActivity().replaceDockableFragment(LoginFragment.newInstance(), "LoginFragment");
+
+                UIHelper.showShortToastInCenter(getDockActivity(), getResString(R.string.logout_successfully));
                 break;
         }
     }

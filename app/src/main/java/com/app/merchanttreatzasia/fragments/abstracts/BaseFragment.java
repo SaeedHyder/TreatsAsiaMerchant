@@ -142,9 +142,6 @@ public abstract class BaseFragment extends Fragment implements webServiceRespons
 
 
         prefHelper = new BasePreferenceHelper(getContext());
-        if (getDockActivity().getDrawerLayout() != null) {
-            getDockActivity().lockDrawer();
-        }
 
         mGpsTracker = new GPSTracker(getDockActivity());
         if (googleWebService == null) {
@@ -177,10 +174,6 @@ public abstract class BaseFragment extends Fragment implements webServiceRespons
     public void onResume() {
         super.onResume();
         //	setTitleBar( ((MainActivity) getDockActivity()).titleBar );
-
-        if (getDockActivity().getDrawerLayout() != null) {
-            getDockActivity().lockDrawer();
-        }
     }
 
     @Override
@@ -335,6 +328,16 @@ public abstract class BaseFragment extends Fragment implements webServiceRespons
             return et.getText().toString().trim().length() >= 1;
         }
 
+    }
+
+    public String getResString(int id){
+        return getDockActivity().getResources().getString(id);
+    }
+
+    protected void setEditTextFocus(AnyEditTextView textFocus) {
+        InputMethodManager imm = (InputMethodManager) getDockActivity().getSystemService(Context.INPUT_METHOD_SERVICE);
+        if (imm != null)
+            imm.showSoftInput(textFocus, InputMethodManager.SHOW_IMPLICIT);
     }
 
 }

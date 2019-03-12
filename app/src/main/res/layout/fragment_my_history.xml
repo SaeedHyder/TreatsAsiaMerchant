@@ -12,7 +12,7 @@
         android:layout_height="match_parent"
         android:layout_gravity="center"
         android:gravity="center"
-        android:text="@string/no_data"
+        android:text="@string/no_istory_found"
         android:textColor="@color/dark_grey"
         android:textSize="@dimen/x15"
         android:visibility="gone"

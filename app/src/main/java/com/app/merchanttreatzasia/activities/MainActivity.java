@@ -3,8 +3,11 @@ package com.app.merchanttreatzasia.activities;
 import android.annotation.TargetApi;
 import android.app.Activity;
 import android.graphics.drawable.Drawable;
+import android.location.Address;
+import android.location.Geocoder;
 import android.os.Build;
 import android.os.Bundle;
+import android.os.StrictMode;
 import android.support.v4.app.FragmentManager;
 import android.support.v4.app.FragmentTransaction;
 import android.support.v4.widget.DrawerLayout;
@@ -29,6 +32,10 @@ import com.app.merchanttreatzasia.helpers.UIHelper;
 import com.app.merchanttreatzasia.residemenu.ResideMenu;
 import com.app.merchanttreatzasia.ui.views.TitleBar;
 
+import java.io.IOException;
+import java.util.List;
+import java.util.Locale;
+
 import butterknife.BindView;
 import butterknife.ButterKnife;
 
@@ -45,8 +52,12 @@ public class MainActivity extends DockActivity implements OnClickListener {
     ProgressBar progressBar;
     private MainActivity mContext;
     private boolean loading;
+    @BindView(R.id.drawer_layout)
+    DrawerLayout drawerLayout;
 
     private ResideMenu resideMenu;
+    private String address = "";
+    private String country = "";
 
     private float lastTranslate = 0.0f;
 
@@ -79,6 +90,11 @@ public class MainActivity extends DockActivity implements OnClickListener {
 
         sideMenuType = SideMenuChooser.RESIDE_MENU.getValue();
         sideMenuDirection = SideMenuDirection.LEFT.getValue();
+
+        lockDrawer();
+
+        StrictMode.VmPolicy.Builder builder = new StrictMode.VmPolicy.Builder();
+        StrictMode.setVmPolicy(builder.build());
 
         settingSideMenu(sideMenuType, sideMenuDirection);
 
@@ -277,6 +293,56 @@ public class MainActivity extends DockActivity implements OnClickListener {
 
     private void notImplemented() {
         UIHelper.showLongToastInCenter(this, "Coming Soon");
+    }
+
+    public void closeDrawer() {
+        drawerLayout.closeDrawers();
+
+
+    }
+
+    public void lockDrawer() {
+        try {
+            drawerLayout.setDrawerLockMode(DrawerLayout.LOCK_MODE_LOCKED_CLOSED);
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
+    }
+
+    public void releaseDrawer() {
+        drawerLayout.setDrawerLockMode(DrawerLayout.LOCK_MODE_UNLOCKED);
+    }
+
+
+    public DrawerLayout getDrawerLayout(){
+        return drawerLayout;
+    }
+
+    public String getCurrentAddress(double lat, double lng) {
+        try {
+
+
+            Geocoder geocoder;
+            List<Address> addresses;
+            geocoder = new Geocoder(getApplicationContext(), Locale.getDefault());
+            addresses = geocoder.getFromLocation(lat, lng, 1); // Here 1 represent max location result to returned, by documents it recommended 1 to 5
+            if (addresses.size() > 0) {
+                address = addresses.get(0).getAddressLine(0); // If any additional address line present than only, check with max available address lines by getMaxAddressLineIndex()
+            }
+// String city = addresses.get(0).getLocality();
+// String state = addresses.get(0).getAdminArea();
+            if (addresses.size() > 0) {
+                country = addresses.get(0).getCountryName();
+            }
+// String postalCode = addresses.get(0).getPostalCode();
+// String knownName = addresses.get(0).getFeatureName(); // Only if available else return NULL
+            return address + ", " + country;
+
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+
+        return null;
     }
 
 }

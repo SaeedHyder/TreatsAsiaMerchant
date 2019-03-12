@@ -42,6 +42,22 @@ public class DialogHelper {
         dialog.setCancelable(false);
         this.dialog.setContentView(layoutID);
         AnyTextView btnSubmit = (AnyTextView) dialog.findViewById(R.id.btnOk);
+        AnyTextView txtMsg = (AnyTextView) dialog.findViewById(R.id.txtMsg);
+        btnSubmit.setOnClickListener(onokclicklistener);
+
+        return this.dialog;
+    }
+    public Dialog initRedeemedCouponDialog(int layoutID,String text, View.OnClickListener onokclicklistener) {
+        dialog.requestWindowFeature(Window.FEATURE_NO_TITLE);
+        dialog.getWindow().setBackgroundDrawable(new ColorDrawable(Color.TRANSPARENT));
+        dialog.setCanceledOnTouchOutside(false);
+        dialog.setCancelable(false);
+        this.dialog.setContentView(layoutID);
+        AnyTextView btnSubmit = (AnyTextView) dialog.findViewById(R.id.btnOk);
+        AnyTextView txtMsg = (AnyTextView) dialog.findViewById(R.id.txtMsg);
+        if(text!=null && !text.equals("") && !text.isEmpty()){
+            txtMsg.setText(text);
+        }
         btnSubmit.setOnClickListener(onokclicklistener);
 
         return this.dialog;

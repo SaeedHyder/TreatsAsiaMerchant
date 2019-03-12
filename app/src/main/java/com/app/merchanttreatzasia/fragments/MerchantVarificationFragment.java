@@ -8,6 +8,7 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Button;
 import android.widget.ImageView;
+import android.widget.LinearLayout;
 
 import com.app.merchanttreatzasia.R;
 import com.app.merchanttreatzasia.entities.EVocherDetailEnt;
@@ -50,6 +51,8 @@ public class MerchantVarificationFragment extends BaseFragment {
     Button btnRescan;
     @BindView(R.id.edtMerchantId)
     AnyEditTextView edtMerchantId;
+    @BindView(R.id.llMainFrame)
+    LinearLayout llMainFrame;
     @BindView(R.id.btnNext)
     Button btnNext;
     Unbinder unbinder;
@@ -119,7 +122,7 @@ public class MerchantVarificationFragment extends BaseFragment {
     @Override
     public void onViewCreated(View view, Bundle savedInstanceState) {
         super.onViewCreated(view, savedInstanceState);
-
+        llMainFrame.setVisibility(View.GONE);
         txtTotalRate.setPaintFlags(txtTotalRate.getPaintFlags() | Paint.STRIKE_THRU_TEXT_FLAG);
     }
 
@@ -163,6 +166,7 @@ public class MerchantVarificationFragment extends BaseFragment {
     public void ResponseSuccess(Object result, String Tag) {
         switch (Tag) {
             case WebServiceConstants.evaucherdetailBarcode:
+                llMainFrame.setVisibility(View.VISIBLE);
                 eVocherDetailEnt = (EVocherDetailEnt) result;
                 if (eVocherDetailEnt != null)
                     setData(eVocherDetailEnt);
@@ -175,11 +179,6 @@ public class MerchantVarificationFragment extends BaseFragment {
         }
     }
 
-    @Override
-    public void onDestroyView() {
-        super.onDestroyView();
-        unbinder.unbind();
-    }
 
     private boolean validateFields() {
         return edtMerchantId.testValidity();

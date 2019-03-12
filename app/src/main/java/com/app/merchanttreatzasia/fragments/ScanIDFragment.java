@@ -74,7 +74,7 @@ public class ScanIDFragment extends BaseFragment implements BarcodeRetriever {
         titleBar.showBackButton(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                getDockActivity().replaceDockableFragment(HomeFragment.newInstance(), HomeFragment.class.getSimpleName());
+               getDockActivity().popFragment();
             }
         });
         titleBar.showNotificationButton(new View.OnClickListener() {
@@ -96,7 +96,7 @@ public class ScanIDFragment extends BaseFragment implements BarcodeRetriever {
                         .setTitle("code retrieved")
                         .setMessage(barcode.displayValue);
                 builder.show();*/
-                UIHelper.showShortToastInCenter(getDockActivity(), getString(R.string.scanned_complete));
+               // UIHelper.showShortToastInCenter(getDockActivity(), getString(R.string.scanned_complete));
                 getDockActivity().replaceDockableFragment(MerchantVarificationFragment.newInstance(barcode.displayValue), MerchantVarificationFragment.class.getSimpleName());
             }
         });

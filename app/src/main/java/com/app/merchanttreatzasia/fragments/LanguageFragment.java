@@ -113,13 +113,6 @@ public class LanguageFragment extends BaseFragment {
     }
 
 
-    @Override
-    public void onDestroyView() {
-        super.onDestroyView();
-        unbinder.unbind();
-
-
-    }
 
 
     @OnClick(R.id.btnApply)
@@ -151,6 +144,7 @@ public class LanguageFragment extends BaseFragment {
 
                         prefHelper.setConvertedAmount(response.body().getResult().getRate());
                         prefHelper.setConvertedAmountCurrency(AppConstants.SGD);
+                        getDockActivity().popBackStackTillEntry(0);
                         getDockActivity().replaceDockableFragment(HomeFragment.newInstance(), HomeFragment.class.getName());
                     } else {
                         UIHelper.showLongToastInCenter(getDockActivity(), response.body().getMessage());
@@ -183,6 +177,7 @@ public class LanguageFragment extends BaseFragment {
 
                         prefHelper.setConvertedAmount(response.body().getResult().getRate());
                         prefHelper.setConvertedAmountCurrency(AppConstants.MYR);
+                        getDockActivity().popBackStackTillEntry(0);
                         getDockActivity().replaceDockableFragment(HomeFragment.newInstance(), HomeFragment.class.getName());
 
                     } else {
@@ -216,6 +211,7 @@ public class LanguageFragment extends BaseFragment {
 
                         prefHelper.setConvertedAmount(response.body().getResult().getRate());
                         prefHelper.setConvertedAmountCurrency(AppConstants.IDR);
+                        getDockActivity().popBackStackTillEntry(0);
                         getDockActivity().replaceDockableFragment(HomeFragment.newInstance(), HomeFragment.class.getName());
                     } else {
                         UIHelper.showLongToastInCenter(getDockActivity(), response.body().getMessage());

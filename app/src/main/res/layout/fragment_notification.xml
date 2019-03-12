@@ -9,13 +9,16 @@
         android:id="@+id/txt_no_data"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:visibility="gone"
+        android:visibility="visible"
         android:gravity="center"
-        android:text="@string/no_data"
-        android:textColor="@color/dark_grey"
+        android:text="@string/no_notification_found"
+        android:layout_marginStart="@dimen/x15"
+        android:layout_marginEnd="@dimen/x15"
+        android:textColor="@color/white"
+        android:alpha="0.9"
         android:layout_gravity="center"
         app:typeface="Roboto-Regular.ttf"
-        android:textSize="@dimen/x15"
+        android:textSize="@dimen/x14"
 
         />
     <ListView

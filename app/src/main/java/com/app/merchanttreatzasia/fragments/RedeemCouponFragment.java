@@ -155,11 +155,7 @@ public class RedeemCouponFragment extends BaseFragment {
         },prefHelper.getNotificationCount());
     }
 
-    @Override
-    public void onDestroyView() {
-        super.onDestroyView();
-        unbinder.unbind();
-    }
+
 
     private boolean validateFields() {
         return edtAmount.testValidity();
@@ -173,10 +169,13 @@ public class RedeemCouponFragment extends BaseFragment {
             updatedCheckingAmount = Float.valueOf(Utils.getRemainingAmountForRedeemCoupon(Integer.parseInt(eVocherDetailEnt.getEvoucherDetail().getAmount()), Integer.parseInt(eVocherDetailEnt.getEvoucherDetail().getProductDetail().getPrice()))) * prefHelper.getConvertedAmount();
             String formattedValuePriceTotal3 = String.format("%.2f", updatedCheckingAmount);
 
-
+                String actualAmount=Utils.getRemainingAmountForRedeemCoupon(Integer.parseInt(eVocherDetailEnt.getEvoucherDetail().getAmount()), Integer.parseInt(eVocherDetailEnt.getEvoucherDetail().getProductDetail().getPrice()));
             if (formattedValuePriceTotal3.equals(edtAmount.getText().toString())) {
-                serviceHelper.enqueueCall(webService.couponRedeem(eVocherDetailEnt.getEvoucherId() + "", eVocherDetailEnt.getUserId() + "",
+              /*  serviceHelper.enqueueCall(webService.couponRedeem(eVocherDetailEnt.getEvoucherId() + "", eVocherDetailEnt.getUserId() + "",
                         eVocherDetailEnt.getQrCode(), edtAmount.getText().toString(),
+                        prefHelper.getMerchant().getToken()), WebServiceConstants.couponredeem);*/
+                serviceHelper.enqueueCall(webService.couponRedeem(eVocherDetailEnt.getEvoucherId() + "", eVocherDetailEnt.getUserId() + "",
+                        eVocherDetailEnt.getQrCode(), actualAmount,
                         prefHelper.getMerchant().getToken()), WebServiceConstants.couponredeem);
             } else {
                 UIHelper.showShortToastInCenter(getDockActivity(), "Please enter correct remaining amount.");
@@ -194,7 +193,7 @@ public class RedeemCouponFragment extends BaseFragment {
                     public void onClick(View v) {
                         dialogHelper.hideDialog();
                         getDockActivity().popBackStackTillEntry(0);
-                        getDockActivity().addDockableFragment(HomeFragment.newInstance(), "HomeFragment");
+                        getDockActivity().replaceDockableFragment(HomeFragment.newInstance(), "HomeFragment");
                     }
                 });
 

@@ -17,11 +17,11 @@
         android:layout_alignParentTop="true"
         android:layout_centerHorizontal="true"
         android:gravity="center_horizontal"
-        android:text="@string/invalid_code"
+        android:text="QR Code"
         android:textColor="@color/dark_grey"
         android:textSize="@dimen/x20"
-        android:layout_marginTop="@dimen/x20"
-        android:layout_marginBottom="@dimen/x20"
+        android:layout_marginTop="@dimen/x10"
+        android:layout_marginBottom="@dimen/x10"
         app:typeface="@string/font_normal" />
 
     <View
@@ -86,7 +86,8 @@
         android:layout_height="wrap_content"
         android:layout_alignBottom="@+id/textLayout"
         android:layout_centerHorizontal="true"
-        android:layout_marginTop="@dimen/x15"
+        android:layout_marginTop="@dimen/x10"
+        android:layout_marginBottom="@dimen/x10"
         android:orientation="vertical">
 
         <com.app.merchanttreatzasia.ui.views.AnyTextView
@@ -97,7 +98,7 @@
             android:text="@string/ok"
             android:textColor="@color/gold_color"
             android:textSize="20sp"
-            android:paddingBottom="@dimen/x20"
+
             app:typeface="@string/font_normal" />
 
 
